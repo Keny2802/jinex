@@ -38,6 +38,7 @@ const Hero = () => {
                                     height={350}
                                     src={picture.src}
                                     alt={picture.alt}
+                                    type="instantImage"
                                     className={`${idx === 2 ? "col-span-2 md:max-w-full" : "col-span-1"} row-span-1 w-full md:max-w-[350px] md:min-h-[300px] md:max-h-[350px] object-cover rounded-md`}
                                     />
                                 );
