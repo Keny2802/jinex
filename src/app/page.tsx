@@ -5,6 +5,7 @@ import {
 import Header from "./components/Header";
 import Subheader from "./components/Subheader";
 import Hero from "./sections/Hero";
+import HowItWorks from "./sections/HowItWorks";
 
 const Page = () => {
   return (
@@ -12,6 +13,7 @@ const Page = () => {
       <Header />
       <Subheader />
       <Hero />
+      <HowItWorks />
     </Fragment>
   );
 };

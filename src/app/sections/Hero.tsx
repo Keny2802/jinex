@@ -1,4 +1,5 @@
 import {
+    ReactNode,
     Fragment
 } from "react";
 import clsx from "clsx";
@@ -10,10 +11,18 @@ import Text from "../components/Text";
 import Logo from "../components/Logo";
 import Cta from "../components/Cta";
 
-const Hero = () => {
+type props = {
+    className?: string;
+    children?: ReactNode;
+};
+
+const Hero = ({
+    className,
+    children
+}: props) => {
     return (
         <Fragment>
-            <Wrapper className="p-10">
+            <Wrapper className={clsx(className, "p-6 md:p-8 lg:p-10 hero-section-component")}>
                 <Flex className="justify-evenly">
                     <Wrapper className="w-full md:max-w-1/2 grid grid-cols-1 md:grid-cols-2 md:auto-rows-auto gap-2 md:gap-3 lg:gap-4 mt-2 md:mt-4 lg:mt-4">
                         {
@@ -39,7 +48,7 @@ const Hero = () => {
                                     src={picture.src}
                                     alt={picture.alt}
                                     type="instantImage"
-                                    className={`${idx === 2 ? "col-span-2 md:max-w-full" : "col-span-1"} row-span-1 w-full md:max-w-[350px] md:min-h-[300px] md:max-h-[350px] object-cover rounded-md`}
+                                    className={`${idx === 2 ? "md:col-span-2 md:max-w-full" : "col-span-1"} row-span-1 w-full md:max-w-[350px] md:min-h-[300px] md:max-h-[350px] object-cover rounded-md`}
                                     />
                                 );
                             })
@@ -67,6 +76,7 @@ const Hero = () => {
                         </Cta>
                     </Flex>
                 </Flex>
+                {children}
             </Wrapper>
         </Fragment>
     );
