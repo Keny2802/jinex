@@ -9,12 +9,14 @@ import Wrapper from "./Wrapper";
 type props = {
     type?: "flexRowOnly" | "flexRowCombo" | "flexCol";
     className?: string;
+    id?: string;
     children?: ReactNode;
 };
 
 const Flex = ({
     type = "flexRowCombo",
     className,
+    id,
     children
 } : props) => {
     const types = {
@@ -25,7 +27,9 @@ const Flex = ({
 
     return (
         <Fragment>
-            <Wrapper className={clsx(className, `${types[type]} flex-component`)}>
+            <Wrapper
+            className={clsx(className, `${types[type]} flex-component`)}
+            id={id}>
                 {children}
             </Wrapper>
         </Fragment>

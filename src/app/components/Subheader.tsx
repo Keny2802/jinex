@@ -62,7 +62,7 @@ const Subheader = (props: props) => {
                                 }
                             </Flex>
                         </ul>
-                        <Cta href="/jak-to-funguje">
+                        <Cta href="#jak-to-funguje">
                             Jak to funguje
                         </Cta>
                     </Flex>

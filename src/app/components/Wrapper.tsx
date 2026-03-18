@@ -6,14 +6,18 @@ import clsx from "clsx";
 
 const Wrapper = ({
     className,
+    id,
     children
 } : {
     className?: string;
+    id?: string;
     children?: ReactNode
 }) => {
     return (
         <Fragment>
-            <div className={clsx(className, "wrapper-component")}>
+            <div
+            className={clsx(className, "wrapper-component")}
+            id={id}>
                 {children}
             </div>
         </Fragment>
