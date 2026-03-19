@@ -19,7 +19,9 @@ const HowItWorks = ({
 }: props) => {
     return (
         <Fragment>
-            <Wrapper className={clsx(className, "p-6 md:p-8 lg:p-10 border-t border-gray-200 bg-white shadow-lg how-it-works-section-component")}>
+            <Wrapper
+            className={clsx(className, "p-6 md:p-8 lg:p-10 border-t border-gray-200 bg-white shadow-lg how-it-works-section-component")}
+            id="jak-to-funguje">
                 <Flex
                 type="flexCol"
                 className="justify-center items-center text-center">
@@ -97,8 +99,7 @@ const HowItWorks = ({
                                     <Flex
                                     key={idx}
                                     type="flexCol"
-                                    className="p-2.5 md:p-4 lg:p-6 bg-[#00A335] text-white rounded-md"
-                                    id="jak-to-funguje">
+                                    className="p-2.5 md:p-4 lg:p-6 bg-[#00A335] text-white rounded-md">
                                         <Flex
                                         type="flexRowOnly"
                                         className="justify-center">

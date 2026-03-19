@@ -9,7 +9,7 @@ const Wrapper = ({
     id,
     children
 } : {
-    className?: string;
+    className?: string | ReactNode;
     id?: string;
     children?: ReactNode
 }) => {

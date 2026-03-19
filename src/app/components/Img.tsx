@@ -8,41 +8,54 @@ type FillType = {
     fill?: boolean;
 };
 
+type priorityProps = "standard" | "instantImage" | "hero";
+
 type Props = {
     width?: number;
     height?: number;
+    type?: priorityProps;
     src: string;
     alt?: string;
-    type?: "standard" | "instantImage" | "hero";
+    draggable?: boolean;
     className?: string;
 } & FillType;
 
-const Img = (props: Props) => {
+const Img = ({
+    width,
+    height,
+    type,
+    src,
+    alt,
+    draggable = true,
+    fill,
+    className
+}: Props) => {
     return (
         <Fragment>
             <Image
                 {
                     ...(
-                        props.fill ? ({
+                        fill ? ({
                             fill: true
                         }) : ({
-                            width: props.width,
-                            height: props.height
+                            width: width,
+                            height: height
                         })
                     )
                 }
                 {
                     ...(
-                        props.type === "hero" || "instantImage" ? ({
+                        type === "hero" || "instantImage" ? ({
                             priority: true
                         }) : ({
                             priority: false
                         })
                     )
                 }
-                src={props.src}
-                alt={props.alt || ""}
-                className={clsx(props.className, "img-component")}
+                src={src}
+                alt={alt || ""}
+                draggable={draggable}
+                className={clsx(className, "img-component")}
             />
         </Fragment>
     );
