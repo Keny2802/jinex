@@ -50,7 +50,7 @@ const Services = ({
                             {
                                 src: "/spolecne-prostory-bytovych-domu.avif",
                                 alt: "Služba společné prostory bytových prostorů - Jinex.cz | Jiří Nesměrák",
-                                href: "/sluzby/spolecne-prpstory",
+                                href: "/sluzby/spolecne-prostory-bytovych-domu",
                                 heading: "Společné prostory bytových prostorů"
                             },
                             {
@@ -61,9 +61,9 @@ const Services = ({
                             },
                             {
                                 src: "/rekonstrukce-fasad-a-lodzii.avif",
-                                alt: "Služba rekonstrukce a odizolování základů a kanalizace - Jinex.cz | Jiří Nesměrák",
+                                alt: "Služba rekonstrukce fasád a lodžií - Jinex.cz | Jiří Nesměrák",
                                 href: "/sluzby/rekonstrukce-fasad-a-lodzii",
-                                heading: "Rekonstrukce a odizolování základů a kanalizace"
+                                heading: "Rekonstrukce fasád a lodžií"
                             },
                             {
                                 src: "/rekonstrukce-socialnich-bytu.avif",

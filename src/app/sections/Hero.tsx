@@ -23,7 +23,9 @@ const Hero = ({
     return (
         <Fragment>
             <Wrapper className={clsx(className, "p-6 md:p-8 lg:p-10 hero-section-component")}>
-                <Flex className="justify-evenly">
+                <Flex
+                type="flexRowReverseCombo"
+                className="justify-evenly">
                     <Wrapper className="w-full md:max-w-1/2 grid grid-cols-1 md:grid-cols-2 md:auto-rows-auto gap-2 md:gap-3 lg:gap-4 mt-2 md:mt-4 lg:mt-4">
                         {
                             [
