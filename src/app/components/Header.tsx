@@ -56,7 +56,7 @@ const Header = (props: props) => {
                     href="tel:+420604779290"
                     className="hidden md:inline-block">
                         <Flex type="flexRowOnly">
-                            <PhoneIcon className="w-8 h-8 text-[#00A335]" />
+                            <PhoneIcon className="w-8 h-8 text-[#02204f]" />
                             +420 604 779 290
                         </Flex>
                     </Link>

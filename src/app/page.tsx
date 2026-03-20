@@ -9,6 +9,7 @@ import HowItWorks from "./sections/HowItWorks";
 import Services from "./sections/Services";
 import LastDoneWorks from "./sections/LastDoneWorks";
 import WeaAreInProcess from "./sections/WeaAreInProcess";
+import CtaSect from "./sections/CtaSect";
 
 const Page = () => {
   return (
@@ -20,6 +21,7 @@ const Page = () => {
       <Services id="sluzby" />
       <LastDoneWorks id="posledni-dokoncene-prace" />
       <WeaAreInProcess id="prave-provadime" />
+      <CtaSect id="jste-z-karlovych-varu-nebo-okoli" />
     </Fragment>
   );
 };

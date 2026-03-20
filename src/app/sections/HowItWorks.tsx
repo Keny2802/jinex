@@ -99,7 +99,7 @@ const HowItWorks = ({
                                     <Flex
                                     key={idx}
                                     type="flexCol"
-                                    className="p-2.5 md:p-4 lg:p-6 bg-[#00A335] text-white rounded-md">
+                                    className="p-2.5 md:p-4 lg:p-6 bg-[#02204f] text-white rounded-md">
                                         <Flex
                                         type="flexRowOnly"
                                         className="justify-center">
