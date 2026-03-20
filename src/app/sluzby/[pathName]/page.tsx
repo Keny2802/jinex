@@ -2,9 +2,13 @@ import {
     Fragment
 } from "react";
 
+import Content from "./Content";
+
 const Page = () => {
     return (
-        <Fragment></Fragment>
+        <Fragment>
+            <Content />
+        </Fragment>
     );
 };
 
