@@ -74,7 +74,7 @@ const LastDoneWorks = ({
                                         height={500}
                                         src={src}
                                         alt={alt}
-                                        className="w-full md:max-w-[500px] md:h-[350px] rounded-2xl object-cover"
+                                        className="w-full max-h-[375px] md:max-w-[500px] md:h-[350px] rounded-2xl object-cover"
                                         />
                                         <Wrapper className="absolute inset-0 w-full md:max-w-[500px] md:h-[350px] rounded-2xl bg-black/40" />
                                         <Wrapper className="absolute bottom-8 left-5 md:max-w-[400px] text-white">

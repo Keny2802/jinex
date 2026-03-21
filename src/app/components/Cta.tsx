@@ -24,7 +24,7 @@ const Cta = ({
     children
 }: props) => {
     const variants = {
-        primary: "bg-[#02204f] text-white text-center rounded-full cursor-pointer text-base md:text-[17px] lg:text-[17.5px]",
+        primary: "bg-[#0530a6] text-white text-center rounded-full cursor-pointer text-base md:text-[17px] lg:text-[17.5px]",
         secondary: "bg-white text-black text-center rounded-full cursor-pointer text-base md:text-[17px] lg:text-[17.5px]"
     };
 

@@ -10,6 +10,7 @@ import Services from "./sections/Services";
 import LastDoneWorks from "./sections/LastDoneWorks";
 import WeaAreInProcess from "./sections/WeaAreInProcess";
 import CtaSect from "./sections/CtaSect";
+import Faq from "./sections/FavoriteAndQuestions";
 
 const Page = () => {
   return (
@@ -22,6 +23,7 @@ const Page = () => {
       <LastDoneWorks id="posledni-dokoncene-prace" />
       <WeaAreInProcess id="prave-provadime" />
       <CtaSect id="jste-z-karlovych-varu-nebo-okoli" />
+      <Faq id="casto-kladene-dotazy" />
     </Fragment>
   );
 };

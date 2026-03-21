@@ -32,7 +32,8 @@ const Services = ({
                         Z našeho širokého výběru stavebních a řemeslných prací si rozhodně vyberete.
                     </Text>
                 </Flex>
-                <Grid className="mt-2.5 md:mt-3 lg:mt-4 w-full mx-auto">
+                <Grid
+                className="mt-2.5 md:mt-3 lg:mt-4 w-full mx-auto">
                     {
                         [
                             {
@@ -102,9 +103,10 @@ const Services = ({
                                         height={500}
                                         src={src}
                                         alt={alt}
-                                        className="w-full md:max-w-[500px] md:h-[350px] rounded-2xl object-cover"
+                                        className="w-full md:max-w-full md:h-[350px] rounded-2xl object-cover"
                                         />
-                                        <Wrapper className="absolute inset-0 w-full md:max-w-[500px] md:h-[350px] rounded-2xl bg-black/40" />
+                                        {/* [500px] */}
+                                        <Wrapper className="absolute inset-0 w-full md:max-w-full md:h-[350px] rounded-2xl bg-black/30" />
                                         <Wrapper className="absolute bottom-8 left-5 md:max-w-[400px] text-white">
                                             <Text type="cardHeading">
                                                 {heading}
