@@ -26,7 +26,7 @@ const HowItWorks = ({
                 type="flexCol"
                 className="justify-center items-center text-center">
                     <Text type="sectionHeading">
-                        Jak to s nám funguje a probíhá?
+                        Jak to s námi funguje a probíhá?
                     </Text>
                     <Text>
                         Ať máte přehled o každém našem kroku v procesu.
