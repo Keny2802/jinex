@@ -17,6 +17,7 @@ type Props = {
     src: string;
     alt?: string;
     draggable?: boolean;
+    style?: React.CSSProperties;
     className?: string;
 } & FillType;
 
@@ -27,6 +28,7 @@ const Img = ({
     src,
     alt,
     draggable = true,
+    style,
     fill,
     className
 }: Props) => {
@@ -55,6 +57,7 @@ const Img = ({
                 src={src}
                 alt={alt || ""}
                 draggable={draggable}
+                style={style}
                 className={clsx(className, "img-component")}
             />
         </Fragment>

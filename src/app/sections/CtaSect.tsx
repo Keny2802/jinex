@@ -22,32 +22,34 @@ const CtaSect = ({
 }: props) => {
     return (
         <Fragment>
-            <Relative
-            className={clsx(className, "h-screen cta-sect-section-component")}
-            id={id}>
-                <Img
-                fill
-                src="/jste-z-karlovych-varu-nebo-okoli.avif"
-                alt="Nabídka Jste z Karlových Varů nebo okolí? - Jinex.cz | Jiří Nesměrák"
-                className="object-cover"
-                />
-                <Absolute className="bg-black/40" />
-                <Absolute className="text-white">
-                    <Flex
-                    type="flexCol"
-                    className="h-screen justify-center items-center text-center">
-                        <Text type="sectionHeading">
-                            Jste z Karlových Varů nebo okolí?
-                        </Text>
-                        <Text>
-                            Sháníte naše služby, které pro Vás provádíme primárně v Karlových Varech a okolí, pokud ano neváhejte nás kontaktovat.
-                        </Text>
-                        <Cta href="#kontakt">
-                            Poptat služby
-                        </Cta>
-                    </Flex>
-                </Absolute>
-            </Relative>
+            <Wrapper className="p-6 md:p-8 lg:p-10 bg-white shadown-lg">
+                <Relative
+                className={clsx(className, "min-h-[400px] md:min-h-screen cta-sect-section-component")}
+                id={id}>
+                    <Img
+                    fill
+                    src="/jste-z-karlovych-varu-nebo-okoli.avif"
+                    alt="Nabídka Jste z Karlových Varů nebo okolí? - Jinex.cz | Jiří Nesměrák"
+                    className="max-h-[350px] md:min-h-full rounded-3xl object-cover"
+                    />
+                    <Absolute className="max-h-[350px] md:min-h-full rounded-3xl bg-black/40" />
+                    <Absolute className="text-white">
+                        <Flex
+                        type="flexCol"
+                        className="p-2.5 md:p-3 lg:p-4 h-full justify-center items-center text-center">
+                            <Text type="sectionHeading">
+                                Jste z Karlových Varů nebo okolí?
+                            </Text>
+                            <Text>
+                                Sháníte naše služby, které pro Vás provádíme primárně v Karlových Varech a okolí, pokud ano neváhejte nás kontaktovat.
+                            </Text>
+                            <Cta href="#kontakt">
+                                Poptat služby
+                            </Cta>
+                        </Flex>
+                    </Absolute>
+                </Relative>
+            </Wrapper>
         </Fragment>
     );
 };

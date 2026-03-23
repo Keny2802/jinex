@@ -11,6 +11,8 @@ import LastDoneWorks from "./sections/LastDoneWorks";
 import WeaAreInProcess from "./sections/WeaAreInProcess";
 import CtaSect from "./sections/CtaSect";
 import Faq from "./sections/FavoriteAndQuestions";
+import Contact from "./sections/Contact";
+import Footer from "./components/Footer";
 
 const Page = () => {
   return (
@@ -24,6 +26,8 @@ const Page = () => {
       <WeaAreInProcess id="prave-provadime" />
       <CtaSect id="jste-z-karlovych-varu-nebo-okoli" />
       <Faq id="casto-kladene-dotazy" />
+      <Contact id="kontakt" />
+      <Footer />
     </Fragment>
   );
 };

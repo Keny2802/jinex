@@ -37,49 +37,49 @@ const Services = ({
                     {
                         [
                             {
-                                src: "/vykopove-prace.avif",
+                                src: "/sluzby/vykopove-prace/vykopove-prace.avif",
                                 alt: "Služba výkopové práce - Jinex.cz | Jiří Nesměrák",
                                 href: "/sluzby/vykopove-prace",
                                 heading: "Výkopové práce"
                             },
                             {
-                                src: "/stavebni-a-zamecnicke-konstrukce.avif",
+                                src: "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce.avif",
                                 alt: "Služba stavební a zámečnické konstrukce - Jinex.cz | Jiří Nesměrák",
                                 href: "/sluzby/stavebni-a-zamecnicke-kontrukce",
                                 heading: "Stavební a zámečnické konstrukce"
                             },
                             {
-                                src: "/spolecne-prostory-bytovych-domu.avif",
+                                src: "/sluzby/spolecne-prostory-bytovych-domu/spolecne-prostory-bytovych-domu.avif",
                                 alt: "Služba společné prostory bytových prostorů - Jinex.cz | Jiří Nesměrák",
                                 href: "/sluzby/spolecne-prostory-bytovych-domu",
                                 heading: "Společné prostory bytových prostorů"
                             },
                             {
-                                src: "/rekonstrukce-a-odizolovani-zakladu-a-kanalizace.avif",
+                                src: "/sluzby/rekonstrukce-a-odizolovani-zakladu-a-kanalizace/rekonstrukce-a-odizolovani-zakladu-a-kanalizace.avif",
                                 alt: "Služba rekonstrukce a odizolování základů a kanalizace - Jinex.cz | Jiří Nesměrák",
                                 href: "/sluzby/rekonstrukce-a-odizolovani-zakladu-a-kanalizace",
                                 heading: "Rekonstrukce a odizolování základů a kanalizace"
                             },
                             {
-                                src: "/rekonstrukce-fasad-a-lodzii.avif",
+                                src: "/sluzby/rekonstrukce-fasad-a-lodzii/rekonstrukce-fasad-a-lodzii.avif",
                                 alt: "Služba rekonstrukce fasád a lodžií - Jinex.cz | Jiří Nesměrák",
                                 href: "/sluzby/rekonstrukce-fasad-a-lodzii",
                                 heading: "Rekonstrukce fasád a lodžií"
                             },
                             {
-                                src: "/rekonstrukce-socialnich-bytu.avif",
+                                src: "/sluzby/rekonstrukce-socialnich-bytu/rekonstrukce-socialnich-bytu.avif",
                                 alt: "Služba Rekonstrukce sociálních bytů - Jinex.cz | Jiří Nesměrák",
                                 href: "/sluzby/rekonstrukce-socialnich-bytu",
                                 heading: "Rekonstrukce sociálních bytů"
                             },
                             {
-                                src: "/ploty-a-terasy.avif",
+                                src: "/sluzby/ploty-a-terasy/ploty-a-terasy.avif",
                                 alt: "Služba ploty a terasy - Jinex.cz | Jiří Nesměrák",
                                 href: "/sluzby/ploty-a-terasy",
                                 heading: "Ploty a terasy"
                             },
                             {
-                                src: "/koupelny.avif",
+                                src: "/sluzby/koupelny/koupelny.avif",
                                 alt: "Služba koupelny - Jinex.cz | Jiří Nesměrák",
                                 href: "/sluzby/koupelny",
                                 heading: "Koupelny"
@@ -97,16 +97,27 @@ const Services = ({
                                 key={idx}
                                 href={href}>
                                     <Wrapper
-                                    className="relative">
+                                    className="relative bg-[#0530a6] rounded-2xl">
                                         <Img
                                         width={500}
                                         height={500}
                                         src={src}
                                         alt={alt}
-                                        className="w-full md:max-w-full md:h-[350px] rounded-2xl object-cover"
+                                        // rounded-2xl
+                                        className="w-full md:max-w-full md:h-[350px] object-cover"
+                                        style={{
+                                            // 17% 0, 100% 0, 89% 100%, 0 100%
+                                            clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 51%)"
+                                        }}
                                         />
                                         {/* [500px] */}
-                                        <Wrapper className="absolute inset-0 w-full md:max-w-full md:h-[350px] rounded-2xl bg-black/30" />
+                                        <Wrapper
+                                        className="absolute inset-0 bg-black/40"
+                                        style={{
+                                            clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 51%)"
+                                        }}
+                                        />
+                                        {/* <Wrapper className="absolute inset-0 w-full md:max-w-full md:h-[350px] rounded-2xl bg-black/30" /> */}
                                         <Wrapper className="absolute bottom-8 left-5 md:max-w-[400px] text-white">
                                             <Text type="cardHeading">
                                                 {heading}

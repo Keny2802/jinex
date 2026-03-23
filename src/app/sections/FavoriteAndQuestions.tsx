@@ -45,14 +45,13 @@ const Faq = ({
                             Provádím zámečnické a natěračské práce, výměny vchodových, plastových a hliníkových dveří, rekonstrukce bytových jader, opravy společných prostor, lodžií a vchodů. Zatepluji fasády. Zaměřuji se na mozaiky, keramické obklady, okapové chodníky. Zajišťuji realizace rodinných domů.
                         </Text>
                         <Flex
-                        type="flexRowOnly"
-                        className="items-center">
+                        className="items-start md:items-center">
                             <Cta
                             href="#kontakt"
-                            className="md:max-w-max">
+                            className="w-full md:max-w-max">
                                 Získat cenovou nabídku
                             </Cta>
-                            <Wrapper className="w-[1.5px] h-[40px] bg-black" />
+                            <Wrapper className="w-full md:w-[1.5px] h-[1px] md:h-[40px] bg-black" />
                             <Link href="tel:+420604779290">
                                 +420 604 779 290
                             </Link>
@@ -102,7 +101,7 @@ const Faq = ({
                                                         <Flex
                                                         type="flexRowOnly"
                                                         className="justify-between">
-                                                            <Text type="boldText">
+                                                            <Text>
                                                                 {heading}
                                                             </Text>
                                                             <PlusIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
