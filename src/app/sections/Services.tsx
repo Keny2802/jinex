@@ -104,18 +104,18 @@ const Services = ({
                                         src={src}
                                         alt={alt}
                                         // rounded-2xl
-                                        className="w-full md:max-w-full md:h-[350px] object-cover"
-                                        style={{
-                                            // 17% 0, 100% 0, 89% 100%, 0 100%
-                                            clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 51%)"
-                                        }}
+                                        className="w-full md:max-w-full md:h-[350px] rounded-2xl object-cover"
+                                        // style={{
+                                        //     // 17% 0, 100% 0, 89% 100%, 0 100%
+                                        //     clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 51%)"
+                                        // }}
                                         />
                                         {/* [500px] */}
                                         <Wrapper
-                                        className="absolute inset-0 bg-black/40"
-                                        style={{
-                                            clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 51%)"
-                                        }}
+                                        className="absolute inset-0 bg-black/40 rounded-2xl"
+                                        // style={{
+                                        //     clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 51%)"
+                                        // }}
                                         />
                                         {/* <Wrapper className="absolute inset-0 w-full md:max-w-full md:h-[350px] rounded-2xl bg-black/30" /> */}
                                         <Wrapper className="absolute bottom-8 left-5 md:max-w-[400px] text-white">
