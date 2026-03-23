@@ -15,6 +15,9 @@ import Flex from "@/app/components/Flex";
 import Text from "@/app/components/Text";
 import Img from "@/app/components/Img";
 import CtaSect from "@/app/sections/CtaSect";
+import Faq from "@/app/sections/FavoriteAndQuestions";
+import Contact from "@/app/sections/Contact";
+import Footer from "@/app/components/Footer";
 
 const Content = () => {
     const pathName = usePathname();
@@ -59,7 +62,10 @@ const Content = () => {
                     </Flex>
                 </Flex>
             </Wrapper>
-            <CtaSect />
+            <CtaSect id="jste-z-karlovych-varu-nebo-okoli" />
+            <Faq id="casto-kladene-dotazy" />
+            <Contact id="kontakt" />
+            <Footer id="footer" />
         </Fragment>
     );
 };

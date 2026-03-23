@@ -27,7 +27,7 @@ const Page = () => {
       <CtaSect id="jste-z-karlovych-varu-nebo-okoli" />
       <Faq id="casto-kladene-dotazy" />
       <Contact id="kontakt" />
-      <Footer />
+      <Footer id="footer" />
     </Fragment>
   );
 };
