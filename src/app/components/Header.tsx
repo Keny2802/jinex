@@ -51,7 +51,23 @@ const Header = (props: props) => {
                 <Flex
                 type="flexRowOnly"
                 className="justify-between">
-                    <Logo type="instantImage" />
+                    {
+                        isHeaderScrolling ? (
+                            <Logo
+                            width={200}
+                            height={200}
+                            type="instantImage"
+                            className="transition-all duration-200 ease-in-out"
+                            />
+                        ) : (
+                            <Logo
+                            width={250}
+                            height={250}
+                            type="instantImage"
+                            className="transition-all duration-200 ease-in-out"
+                            />
+                        )
+                    }
                     <Link
                     href="tel:+420604779290"
                     className="hidden md:inline-block">
