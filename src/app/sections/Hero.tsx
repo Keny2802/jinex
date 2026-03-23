@@ -1,5 +1,9 @@
+"use client";
+
 import {
     ReactNode,
+    useState,
+    useEffect,
     Fragment
 } from "react";
 import clsx from "clsx";
@@ -20,6 +24,24 @@ const Hero = ({
     className,
     children
 }: props) => {
+    const [isResizing, setToIsResizing] = useState<boolean>(false);
+
+    useEffect(() => {
+        const setToResize = () => {
+            if (window.innerWidth >= 768) {
+                setToIsResizing(true);
+            } else {
+                setToIsResizing(false);
+            };
+        };
+
+        window.addEventListener("resize", setToResize);
+
+        return () => {
+            window.removeEventListener("resize", setToResize);
+        };
+    }, []);
+
     return (
         <Fragment>
             <Wrapper className={clsx(className, "p-6 md:p-8 lg:p-10 hero-section-component")}>
@@ -55,6 +77,13 @@ const Hero = ({
                                 );
                             })
                         }
+                        {
+                            !isResizing && (
+                                <Cta href="#kontakt">
+                                    Zjistit dostupnost řemeslníků
+                                </Cta>
+                            )
+                        }
                     </Wrapper>
                     <Flex type="flexCol"
                     className="mt-2 md:mt-4 lg:mt-6 w-full md:max-w-1/2">
@@ -73,9 +102,13 @@ const Hero = ({
                             na klíč jedním dodavatelem včetně kuchyňských linek a vestavěných
                             skříní a tak dále, nač si jen vzpomenete.
                         </Text>
-                        <Cta href="#kontakt">
-                            Zjistit dostupnost řemeslníků
-                        </Cta>
+                        {
+                            isResizing && (
+                                <Cta href="#kontakt">
+                                Zjistit dostupnost řemeslníků
+                            </Cta>
+                            )
+                        }
                     </Flex>
                 </Flex>
                 {children}
