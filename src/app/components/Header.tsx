@@ -67,7 +67,7 @@ const Header = (props: props) => {
                             className="transition-all duration-200 ease-in-out"
                             />
                         )
-                    }
+                }
                     <Link
                     href="tel:+420604779290"
                     className="hidden md:inline-block">
