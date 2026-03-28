@@ -20,7 +20,7 @@ const Page = () => {
       <Header />
       <Subheader />
       <Hero />
-      <HowItWorks />
+      <HowItWorks id="jak-to-funguje" />
       <Services id="sluzby" />
       <LastDoneWorks id="posledni-dokoncene-prace" />
       <WeaAreInProcess id="prave-provadime" />

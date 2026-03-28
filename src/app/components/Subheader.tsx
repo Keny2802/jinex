@@ -1,3 +1,5 @@
+"use client";
+
 import {
     ReactNode,
     Fragment
@@ -8,6 +10,7 @@ import clsx from "clsx";
 import Wrapper from "./Wrapper";
 import Flex from "./Flex";
 import Cta from "./Cta";
+import HashLess from "./HashLess";
 
 type props = {
     className?: string;
@@ -34,26 +37,28 @@ const Subheader = (props: props) => {
                                         },
                                         {
                                             text: "Jak to funguje",
-                                            href: "/jak-to-funguje"
+                                            href: "#jak-to-funguje"
                                         },
                                         {
                                             text: "Služby",
-                                            href: "/sluzby"
+                                            href: "#sluzby"
                                         },
                                         {
                                             text: "Často kladené dotazy",
-                                            href: "/casto-kladene-dotazy"
+                                            href: "#casto-kladene-dotazy"
                                             // href: "#:~:text=Rekonstrukce%20a%20odizolování%20základů%20a%20kanalizace"
                                         },
                                         {
-                                            text: "O nás",
-                                            href: "/o-nas"
-                                        },
+                                            text: "Kontakt",
+                                            href: "#kontakt"
+                                        }
                                     ].map((link, idx) => {
                                         return (
                                             <Fragment key={idx}>
                                                 <li>
-                                                    <Link href={link.href}>
+                                                    <Link
+                                                    href={link.href}
+                                                    onClick={(evt) => HashLess(evt, link.href)}>
                                                         {link.text}
                                                     </Link>
                                                 </li>

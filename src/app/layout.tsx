@@ -25,6 +25,12 @@ const kanitFont = Kanit({
 export const metadata: Metadata = {
   title: "Široké stavební a zámečnické služby - Jiří Nesměrák | jinex.cz",
   description: "Široké služby v oblasti stavebních a zámečnických prací v západočeském regionu.",
+  icons: {
+    icon: {
+      url: "/favicon-32x32.png",
+      type: "image/png"
+    }
+  }
 };
 
 export default function RootLayout({

@@ -6,6 +6,7 @@ import clsx from "clsx";
 
 type props = {
     className?: string;
+    id?: string
     children?: ReactNode;
 };
 
@@ -15,13 +16,14 @@ import Text from "../components/Text";
 
 const HowItWorks = ({
     className,
+    id,
     children
 }: props) => {
     return (
         <Fragment>
             <Wrapper
             className={clsx(className, "p-6 md:p-8 lg:p-10 border-t border-gray-200 bg-white shadow-lg how-it-works-section-component")}
-            id="jak-to-funguje">
+            id={id}>
                 <Flex
                 type="flexCol"
                 className="justify-center items-center text-center">

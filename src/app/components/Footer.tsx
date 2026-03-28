@@ -1,3 +1,5 @@
+"use client";
+
 import {
     Fragment
 } from "react";
@@ -8,6 +10,7 @@ import Wrapper from "./Wrapper";
 import Flex from "./Flex";
 import Logo from "./Logo";
 import Text from "./Text";
+import HashLess from "./HashLess";
 
 type props = {
     className?: string;
@@ -29,51 +32,96 @@ const Footer = ({
                 type="flexCol"
                 className="justify-center items-center">
                     <Logo />
-                    <Flex className="items-start">
-                        {
+                    <Flex
+                    className="md:justify-evenly items-center md:items-start w-full">
+                        <Flex type="flexCol">
+                            {
+                                    [
+                                        {
+                                            text: "Úvod",
+                                            href: "#uvod"
+                                        },
+                                        {
+                                            text: "Jak to funguje",
+                                            href: "#jak-to-funguje"
+                                        },
+                                        {
+                                            text: "Služby",
+                                            href: "#sluzby"
+                                        },
+                                    ].map((link, idx) => {
+                                        return (
+                                            <Fragment key={idx}>
+                                                <li>
+                                                    <Link
+                                                    href={link.href}
+                                                    onClick={(evt) => HashLess(evt, link.href)}>
+                                                        {link.text}
+                                                    </Link>
+                                                </li>
+                                            </Fragment>
+                                        );
+                                    })
+                            }
+                        </Flex>
+                        <Flex type="flexCol">
+                            {
                                 [
                                     {
-                                        text: "Úvod",
-                                        href: "#uvod"
-                                    },
-                                    {
-                                        text: "Jak to funguje",
-                                        href: "/jak-to-funguje"
-                                    },
-                                    {
-                                        text: "Služby",
-                                        href: "/sluzby"
-                                    },
-                                    {
                                         text: "Často kladené dotazy",
-                                        href: "/casto-kladene-dotazy"
+                                        href: "#casto-kladene-dotazy"
                                     },
                                     {
                                         text: "O nás",
                                         href: "/o-nas"
                                     },
-                                    {
-                                        text: "Poučení o zpracování osobních údajů",
-                                        href: "/pouceni-o-zpracovani-osobnich-udaju"
-                                    },
-                                    {
-                                        text: "Soubory cookies",
-                                        href: "/soubory-cookies"
-                                    },
                                 ].map((link, idx) => {
                                     return (
                                         <Fragment key={idx}>
                                             <li>
-                                                <Link href={link.href}>
+                                                <Link
+                                                href={link.href}
+                                                onClick={(evt) => HashLess(evt, link.href)}>
                                                     {link.text}
                                                 </Link>
                                             </li>
                                         </Fragment>
                                     );
                                 })
-                        }
+                            }
+                        </Flex>
+                        <Flex type="flexCol">
+                            {
+                                [
+                                    {
+                                        text: "Poučení o zpracování osobních údajů",
+                                        href: "/povinne/pouceni-o-zpracovani-osobnich-udaju"
+                                    },
+                                    {
+                                        text: "Obchodní podmínky",
+                                        href: "/povinne/pouceni-o-zpracovani-osobnich-udaju"
+                                    },
+                                    {
+                                        text: "Soubory cookies",
+                                        href: "/povinne/soubory-cookies"
+                                    },
+                                ].map((link, idx) => {
+                                    return (
+                                        <Fragment key={idx}>
+                                            <li>
+                                                <Link
+                                                href={link.href}
+                                                onClick={(evt) => HashLess(evt, link.href)}>
+                                                    {link.text}
+                                                </Link>
+                                            </li>
+                                        </Fragment>
+                                    );
+                                })
+                            }
+                        </Flex>
                     </Flex>
-                    <Text>
+                    <Text className="text-center">
                         Jinex.cz vlastněna Jiřím Nesměrákem, všechna práva vyhrazena.
                     </Text>
                     <Text>
