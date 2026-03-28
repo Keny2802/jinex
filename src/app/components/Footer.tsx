@@ -33,7 +33,7 @@ const Footer = ({
                 className="justify-center items-center">
                     <Logo />
                     <Flex
-                    className="md:justify-evenly items-center md:items-start w-full">
+                    className="md:justify-center items-center md:items-start w-full">
                         <Flex type="flexCol">
                             {
                                     [
@@ -49,6 +49,10 @@ const Footer = ({
                                             text: "Služby",
                                             href: "#sluzby"
                                         },
+                                        {
+                                            text: "Často kladené dotazy",
+                                            href: "#casto-kladene-dotazy"
+                                        },
                                     ].map((link, idx) => {
                                         return (
                                             <Fragment key={idx}>
@@ -62,32 +66,6 @@ const Footer = ({
                                             </Fragment>
                                         );
                                     })
-                            }
-                        </Flex>
-                        <Flex type="flexCol">
-                            {
-                                [
-                                    {
-                                        text: "Často kladené dotazy",
-                                        href: "#casto-kladene-dotazy"
-                                    },
-                                    {
-                                        text: "O nás",
-                                        href: "/o-nas"
-                                    },
-                                ].map((link, idx) => {
-                                    return (
-                                        <Fragment key={idx}>
-                                            <li>
-                                                <Link
-                                                href={link.href}
-                                                onClick={(evt) => HashLess(evt, link.href)}>
-                                                    {link.text}
-                                                </Link>
-                                            </li>
-                                        </Fragment>
-                                    );
-                                })
                             }
                         </Flex>
                         <Flex type="flexCol">

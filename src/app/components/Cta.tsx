@@ -1,9 +1,12 @@
+"use client";
+
 import {
     ReactNode,
     Fragment
 } from "react";
 import Link from "next/link";
 import clsx from "clsx";
+import HashLess from "./HashLess";
 
 type variantType = "primary" | "secondary";
 type sizeType = "md" | "lg";
@@ -37,6 +40,7 @@ const Cta = ({
         <Fragment>
             <Link
             href={href}
+            onClick={(e) => HashLess(e, href)}
             className={clsx(className, `${variants[variant]} ${sizes[size]} cta-component`)}>
                 {children}
             </Link>

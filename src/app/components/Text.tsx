@@ -12,7 +12,7 @@ interface props {
 
 const Text = ({ type="bodyText", className, children } : props) => {
   const textVariants = {
-      heroHeading: "text-4xl/10 md:text-5xl/14 font-black hero-heading-component",
+      heroHeading: "text-4xl/10 md:text-[40xl]/12 font-black hero-heading-component",
       sectionHeading: "text-3xl md:text-4xl font-extrabold section-heading-component",
       cardHeading: "text-2xl md:text-3xl font-bold card-heading-component",
       boldText: "text-xl font-semibold",

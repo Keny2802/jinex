@@ -2,7 +2,8 @@ import type {
   Metadata
 } from "next";
 import {
-  Kanit
+  Kanit,
+  Space_Grotesk
 } from "next/font/google";
 import "./globals.css";
 
@@ -20,7 +21,19 @@ const kanitFont = Kanit({
     "900"
   ],
   subsets: ["latin", "thai"]
-})
+});
+
+const fontSpaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  weight: [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+  ],
+  subsets: ["latin"]
+});
 
 export const metadata: Metadata = {
   title: "Široké stavební a zámečnické služby - Jiří Nesměrák | jinex.cz",
@@ -41,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kanitFont.variable} antialiased`}
+        className={`${fontSpaceGrotesk.variable} antialiased`}
       >
         {children}
       </body>

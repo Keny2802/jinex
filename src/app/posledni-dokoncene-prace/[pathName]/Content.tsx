@@ -42,7 +42,7 @@ const Content = () => {
                 type="flexCol"
                 className="mt-2.5 md:mt-3 lg:mt-4">
                     <Text type="cardHeading">
-                        Podívejte na pár ukázek z realizací ({currentPage?.src.length})
+                        Ukázka z realizací ({currentPage?.src.length})
                     </Text>
                     <Flex className="justify-center flex-wrap mt-2.5 md:mt-3 lg:mt-4">
                         {
