@@ -77,7 +77,7 @@ const Footer = ({
                                     },
                                     {
                                         text: "Obchodní podmínky",
-                                        href: "/povinne/pouceni-o-zpracovani-osobnich-udaju"
+                                        href: "/povinne/obchodni-podminky"
                                     },
                                     {
                                         text: "Soubory cookies",
@@ -88,8 +88,7 @@ const Footer = ({
                                         <Fragment key={idx}>
                                             <li>
                                                 <Link
-                                                href={link.href}
-                                                onClick={(evt) => HashLess(evt, link.href)}>
+                                                href={link.href}>
                                                     {link.text}
                                                 </Link>
                                             </li>
