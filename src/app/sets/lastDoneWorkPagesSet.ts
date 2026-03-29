@@ -2,6 +2,32 @@ const lastDoneWorkPagesSet = [
     {
         heading: "Rekonstrukce lodžií v Habartově",
         url: "/posledni-dokoncene-prace/rekonstrukce-lodzii-v-habartove",
+        title: "Rekonstrukce lodžie v Habartově - Jiří Nesměrák | jinex.cz",
+        description: "Podívejte se na naší z posledních provedených prácí rekonstrukce lodžie v Habartově. Realizováno firmou Jiřím Nesměrákem | jinex.cz",
+        keywords: [
+            "rekonstrukce",
+            "lodžie",
+            "poslední dokončené práce",
+            "habartov",
+            "jinex.cz",
+            "jiří nesměrák",
+            "nová lodžie",
+            "zrekonstruovaná lodžie",
+            "nové lodžie",
+            "rekonstrukce lodžie",
+        ],
+        openGraph: {
+            title: "Poslední dokončená práce rekonstrukce lodžie v Habartově - Jiří Nesměrák | jinex.cz",
+            description: "Podívejte se na naší z posledních provedených prácí rekonstrukce lodžie v Habartově. Realizováno firmou Jiřím Nesměrákem | jinex.cz",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/posledni-dokoncene-prace/rekonstrukce-lodzii-v-habartove/rekonstrukce-lodzii-v-habartove-1.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/posledni-dokoncene-prace/rekonstrukce-lodzii-v-habartove/rekonstrukce-lodzii-v-habartove-1.avif",
             "/posledni-dokoncene-prace/rekonstrukce-lodzii-v-habartove/rekonstrukce-lodzii-v-habartove-2.avif",
@@ -19,6 +45,32 @@ const lastDoneWorkPagesSet = [
     {
         heading: "Rekonstrukce balkónů v Sokolově",
         url: "/posledni-dokoncene-prace/rekonstrukce-balkonu-v-sokolove",
+        title: "Rekonstrukce balkónů v Sokolově - Jiří Nesměrák | jinex.cz",
+        description: "Podívejte se na naší z posledních provedených prácí rekonstrukce balkónů v Sokolově. Realizováno firmou Jiřím Nesměrákem | jinex.cz",
+        keywords: [
+            "poslední dokončená práce",
+            "rekonstrukce",
+            "rekonstrukce balkónů",
+            "balkón",
+            "balkóny",
+            "rekonstrukce balkónů v sokolově",
+            "stavební práce v Karlových Varech a okolí",
+            "balkóny v sokolově",
+            "zrekonstruovavé balkóny",
+            "nový balkón",
+        ],
+        openGraph: {
+            title: "Poslední dokončená práce rekonstrukce balkónů v Sokolově - Jiří Nesměrák | jinex.cz",
+        description: "Podívejte se na naší z posledních provedených prácí rekonstrukce balkónů v Sokolově. Realizováno firmou Jiřím Nesměrákem | jinex.cz",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/posledni-dokoncene-prace/rekonstrukce-balkonu-v-sokolove/rekonstrukce-balkonu-v-sokolove-1.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/posledni-dokoncene-prace/rekonstrukce-balkonu-v-sokolove/rekonstrukce-balkonu-v-sokolove-1.avif",
             "/posledni-dokoncene-prace/rekonstrukce-balkonu-v-sokolove/rekonstrukce-balkonu-v-sokolove-2.avif",
@@ -36,6 +88,32 @@ const lastDoneWorkPagesSet = [
     {
         heading: "Výroba a montáž nájezdu v Chodově",
         url: "/posledni-dokoncene-prace/vyroba-a-montaz-najezdu-v-chodove",
+        title: "Výroba a montáž nájezdu v Chodově  - Jiří Nesměrák | jinex.cz",
+        description: "Podívejte se na naší z posledních provedených prácí výroba a montáž nájezdu. Realizováno firmou Jiřím Nesměrákem | jinex.cz",
+        keywords: [
+            "chodov",
+            "nájezdy",
+            "nájezd",
+            "montáž nájezdu",
+            "zámečnické konstrukce",
+            "zámečnické konstrukce v chodově",
+            "konstrukce",
+            "poslední dokončená práce",
+            "výroba konstrukce",
+            "výroba zámečnické konstrukce",
+        ],
+        openGraph: {
+            title: "Výroba a montáž nájezdu v Chodově",
+            description: "Podívejte se na naší z posledních provedených prácí výroba a montáž nájezdu. Realizováno firmou Jiřím Nesměrákem | jinex.cz",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/posledni-dokoncene-prace/vyroba-a-montaz-najezdu-v-chodove/vyroba-a-montaz-najezdu-v-chodove-1.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/posledni-dokoncene-prace/vyroba-a-montaz-najezdu-v-chodove/vyroba-a-montaz-najezdu-v-chodove-1.avif",
             "/posledni-dokoncene-prace/vyroba-a-montaz-najezdu-v-chodove/vyroba-a-montaz-najezdu-v-chodove-2.avif",

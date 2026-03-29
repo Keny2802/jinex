@@ -2,6 +2,33 @@ const servicePagesSet = [
     {
         heading: "Výkopové práce",
         url: "/sluzby/vykopove-prace",
+        title: "Výkopové práce - Jiří Nesměrák | jinex.cz",
+        description: "Zajistíme veškeré výkopové práce od základů až po terénní úpravy. Spolehlivá technika, zkušenosti a individuální přístup ke každé zakázce.",
+        keywords: [
+            "Výkopové práce",
+            "Zemní práce",
+            "odizolování",
+            "stavební základy",
+            "kanalizace",
+            "odizolování základů",
+            "Rekonstrukce a odizolování základů a kanalizace",
+            "Výkopové práce cena",
+            "Výkopové práce cena za m3",
+            "Výkopové práce cena bagrem",
+        ],
+        ogImage: "/sluzby/vykopove-prace/vykopove-prace.avif",
+        openGraph: {
+            title: "Výkopové práce - Jiří Nesměrák | jinex.cz",
+            description: "Zajistíme veškeré výkopové práce od základů až po terénní úpravy. Spolehlivá technika, zkušenosti a individuální přístup ke každé zakázce.",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/sluzby/vykopove-prace/vykopove-prace.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/sluzby/vykopove-prace/vykopove-prace-1.avif",
             "/sluzby/vykopove-prace/vykopove-prace-2.avif",
@@ -23,6 +50,32 @@ const servicePagesSet = [
     {
         heading: "Stavební a zámečnické konstrukce",
         url: "/sluzby/stavebni-a-zamecnicke-kontrukce",
+        title: "Stavební a zámečnické konstrukce - Jiří Nesměrák | jinex.cz",
+        description: "Zajistíme výrobu i montáž stavebních a zámečnických konstrukcí. Precizní práce, moderní technologie a individuální řešení pro každou zakázku.",
+        keywords: [
+            "stavební konstrukce",
+            "zámečnické konstrukce",
+            "ocelové konstrukce",
+            "kovovýroba",
+            "zámečnické práce",
+            "výroba ocelových konstrukcí",
+            "montáž konstrukcí",
+            "svařování oceli",
+            "kovové konstrukce na míru",
+            "průmyslové konstrukce",
+        ],
+        openGraph: {
+            title: "Stavební a zámečnické konstrukce - Jiří Nesměrák | jinex.cz",
+            description: "Zajistíme výrobu i montáž stavebních a zámečnických konstrukcí. Precizní práce, moderní technologie a individuální řešení pro každou zakázku.",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce-1.avif",
             "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce-2.avif",
@@ -49,6 +102,32 @@ const servicePagesSet = [
     {
         heading: "Společné prostory bytových prostorů",
         url: "/sluzby/spolecne-prostory-bytovych-domu",
+        title: "Společné prostory bytových domů - Jiří Nesměrák | jinex.cz",
+        description: "Zajišťujeme údržbu, opravy i rekonstrukce společných prostor bytových domů. Chodby, sklepy, schodiště i další části domu kvalitně a spolehlivě.",
+        keywords: [
+            "společné prostory bytových domů",
+            "rekonstrukce společných prostor",
+            "opravy bytových domů",
+            "údržba bytových domů",
+            "rekonstrukce chodeb",
+            "oprava schodiště",
+            "revitalizace bytových domů",
+            "správa nemovitostí opravy",
+            "rekonstrukce panelových domů",
+            "stavební práce bytové domy"
+        ],
+        openGraph: {
+            title: "Společné prostory bytových domů - Jiří Nesměrák | jinex.cz",
+        description: "Zajišťujeme údržbu, opravy i rekonstrukce společných prostor bytových domů. Chodby, sklepy, schodiště i další části domu kvalitně a spolehlivě.",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/sluzby/spolecne-prostory-bytovych-domu/spolecne-prostory-bytovych-domu.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/sluzby/spolecne-prostory-bytovych-domu/spolecne-prostory-bytovych-domu-1.avif",
             "/sluzby/spolecne-prostory-bytovych-domu/spolecne-prostory-bytovych-domu-2.avif",
@@ -67,6 +146,32 @@ const servicePagesSet = [
     {
         heading: "Rekonstrukce a odizolování základů a kanalizace",
         url: "/sluzby/rekonstrukce-a-odizolovani-zakladu-a-kanalizace",
+        title: "Rekonstrukce a izolace základů a kanalizace - Jiří Nesměrák | jinex.cz",
+        description: "Provádíme rekonstrukce a odizolování základů i kanalizace. Ochráníme stavbu před vlhkostí, zajistíme opravy a dlouhodobou funkčnost.",
+        keywords: [
+            "rekonstrukce základů",
+            "izolace základů",
+            "odizolování základů",
+            "oprava kanalizace",
+            "rekonstrukce kanalizace",
+            "hydroizolace domu",
+            "sanace vlhkosti",
+            "izolace proti vlhkosti",
+            "výkopové práce kanalizace",
+            "opravy základů domu"
+        ],
+        openGraph: {
+            title: "Rekonstrukce a izolace základů a kanalizace - Jiří Nesměrák | jinex.cz",
+            description: "Provádíme rekonstrukce a odizolování základů i kanalizace. Ochráníme stavbu před vlhkostí, zajistíme opravy a dlouhodobou funkčnost.",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/sluzby/rekonstrukce-a-odizolovani-zakladu-a-kanalizace/rekonstrukce-a-odizolovani-zakladu-a-kanalizace.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/sluzby/rekonstrukce-a-odizolovani-zakladu-a-kanalizace/rekonstrukce-a-odizolovani-zakladu-a-kanalizace-1.avif",
             "/sluzby/rekonstrukce-a-odizolovani-zakladu-a-kanalizace/rekonstrukce-a-odizolovani-zakladu-a-kanalizace-2.avif",
@@ -87,6 +192,32 @@ const servicePagesSet = [
     {
         heading: "Rekonstrukce fasád a lodžií",
         url: "/sluzby/rekonstrukce-fasad-a-lodzii",
+        title: "Rekonstrukce fasád a lodžií - Jiří Nesměrák | jinex.cz",
+        description: "Zajišťujeme rekonstrukce fasád a lodžií - opravy, zateplení i renovace. Zlepšíme vzhled domu, ochráníme konstrukci a zvýšíme jeho hodnotu.",
+        keywords: [
+        "rekonstrukce fasád",
+        "oprava fasády",
+        "zateplení fasády",
+        "renovace fasády",
+        "rekonstrukce lodžií",
+        "oprava lodžie",
+        "oprava balkonu",
+        "revitalizace domu",
+        "opravy bytových domů",
+        "fasádní práce"
+        ],
+        openGraph: {
+            title: "Rekonstrukce fasád a lodžií - Jiří Nesměrák | jinex.cz",
+            description: "Zajišťujeme rekonstrukce fasád a lodžií - opravy, zateplení i renovace. Zlepšíme vzhled domu, ochráníme konstrukci a zvýšíme jeho hodnotu.",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/sluzby/rekonstrukce-fasad-a-lodzii/rekonstrukce-fasad-a-lodzii.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/sluzby/rekonstrukce-fasad-a-lodzii/rekonstrukce-fasad-a-lodzii-1.avif",
             "/sluzby/rekonstrukce-fasad-a-lodzii/rekonstrukce-fasad-a-lodzii-2.avif",
@@ -108,6 +239,32 @@ const servicePagesSet = [
     {
         heading: "Rekonstrukce sociálních bytů",
         url: "/sluzby/rekonstrukce-socialnich-bytu",
+        title: "Rekonstrukce sociálních bytů - Jiří Nesměrák | jinex.cz",
+        description: "Provádíme rekonstrukce sociálních bytů - opravy, modernizace a kompletní úpravy pro zlepšení bydlení a zvýšení komfortu.",
+        keywords: [
+            "rekonstrukce sociálních bytů",
+            "oprava sociálních bytů",
+            "rekonstrukce bytů",
+            "modernizace bytů",
+            "opravy bytových jednotek",
+            "stavební úpravy bytů",
+            "rekonstrukce interiéru bytu",
+            "renovace bytů",
+            "úprava bytových prostor",
+            "rekonstrukce bytových jednotek"
+        ],
+        openGraph: {
+            title: "Rekonstrukce sociálních bytů - Jiří Nesměrák | jinex.cz",
+            description: "Provádíme rekonstrukce sociálních bytů - opravy, modernizace a kompletní úpravy pro zlepšení bydlení a zvýšení komfortu.",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/sluzby/rekonstrukce-socialnich-bytu/rekonstrukce-socialnich-bytu.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/sluzby/rekonstrukce-socialnich-bytu/rekonstrukce-socialnich-bytu-1.avif",
             "/sluzby/rekonstrukce-socialnich-bytu/rekonstrukce-socialnich-bytu-2.avif",
@@ -125,6 +282,32 @@ const servicePagesSet = [
     {
         heading: "Ploty a terasy",
         url: "/sluzby/ploty-a-terasy",
+        title: "Ploty a terasy - Jiří Nesměrák | jinex.cz",
+        description: "Zajišťujeme stavbu plotů a teras na míru. Kvalitní materiály, precizní práce a realizace přesně podle vašich požadavků.",
+        keywords: [
+            "ploty a terasy",
+            "stavba plotů",
+            "montáž plotů",
+            "dřevěné terasy",
+            "terasové konstrukce",
+            "realizace teras",
+            "oplocení pozemku",
+            "stavba zahradních teras",
+            "zahradní ploty",
+            "výstavba plotů na míru"
+        ],
+        openGraph: {
+            title: "Ploty a terasy - Jiří Nesměrák | jinex.cz",
+            description: "Zajišťujeme stavbu plotů a teras na míru. Kvalitní materiály, precizní práce a realizace přesně podle vašich požadavků.",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/sluzby/ploty-a-terasy/ploty-a-terasy.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/sluzby/ploty-a-terasy/ploty-a-terasy-1.avif",
             "/sluzby/ploty-a-terasy/ploty-a-terasy-2.avif",
@@ -135,6 +318,32 @@ const servicePagesSet = [
     {
         heading: "Koupelny",
         url: "/sluzby/koupelny",
+        title: "Koupelny - Jiří Nesměrák | jinex.cz",
+        description: "Provádíme rekonstrukce a realizace koupelen na míru. Kompletní služby od návrhu po dokončení - kvalitně, moderně a spolehlivě.",
+        keywords: [
+            "rekonstrukce koupelen",
+            "koupelny na míru",
+            "realizace koupelny",
+            "rekonstrukce bytu koupelna",
+            "moderní koupelny",
+            "stavební práce koupelny",
+            "obklady a dlažby koupelny",
+            "instalace koupelny",
+            "rekonstrukce interiéru koupelny",
+            "oprava koupelny"
+        ],
+        openGraph: {
+            title: "Koupelny - Jiří Nesměrák | jinex.cz",
+            description: "Provádíme rekonstrukce a realizace koupelen na míru. Kompletní služby od návrhu po dokončení - kvalitně, moderně a spolehlivě.",
+            images: [
+                {
+                    width: 630,
+                    height: 1200,
+                    url: "/sluzby/koupelny/koupelny.avif",
+                    type: "image/avif"
+                }
+            ]
+        },
         src: [
             "/sluzby/koupelny/koupelny-1.avif",
             "/sluzby/koupelny/koupelny-2.avif",

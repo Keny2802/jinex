@@ -22,7 +22,7 @@ const Contact = ({
             <Wrapper
             className={clsx(className, "p-6 md:p-8 lg:p-10 border-y border-gray-200 bg-white shadow-lg contact-section-component")}
             id={id}>
-                <Flex>
+                <Flex type="flexRowReverseCombo">
                     <Flex type="flexCol">
                         <Flex type="flexCol">
                             <Text
@@ -37,18 +37,20 @@ const Contact = ({
                                 Na základě zaslaných informací Vám zašleme odpověď.
                             </Text>
                         </Flex>
-                        <Wrapper className="md:max-w-3/4 p-4 md:p-5 lg:p-6 bg-white shadow-2xl rounded-md">
+                        <Wrapper className="max-w-full p-4 md:p-5 lg:p-6 bg-white shadow-2xl rounded-md">
                             <Text type="boldText">
                                 Kontaktní informace
                             </Text>
                             <Flex
-                            type="flexRowOnly"
-                            className="mt-2.5 md:mt-3 lg:mt-4">
+                            // type="flexRowOnly"
+                            className="mt-2.5 md:mt-3 lg:mt-4 items-start">
                                 <Flex type="flexCol">
                                     {
                                         [
                                             "Jiří Nesměrák",
-                                            "IČO 18264085"
+                                            "IČO 18264085",
+                                            "DIČ CZ7104022255",
+                                            "Zapsán u Finančního úřadu v Sokolově"
                                         ].map((text, idx) => {
                                             return (
                                                 <Text key={idx}>

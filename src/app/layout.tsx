@@ -36,13 +36,54 @@ const fontSpaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  authors: [
+    {
+      name: "Jiří Nesměrák",
+      url: "https://www.jinex.cz"
+    }
+  ],
   title: "Široké stavební a zámečnické služby - Jiří Nesměrák | jinex.cz",
-  description: "Široké služby v oblasti stavebních a zámečnických prací v západočeském regionu.",
+  description: "Jsme tým zkušených lidí ve stavebnictví, kteří Vám poskytnou stavební práce od A do Z.",
   icons: {
     icon: {
       url: "/favicon-32x32.png",
       type: "image/png"
     }
+  },
+  keywords: [
+    "Zemní práce",
+    "Výkopové práce",
+    "Stavební a zámečnické konstrukce",
+    "Společné prostory bytových prostorů",
+    "Rekonstrukce a odizolování základů a kanalizace",
+    "Rekonstrukce fasád a lodžií",
+    "Rekonstrukce sociálních bytů",
+    "Ploty a terasy",
+    "Koupelny",
+    "stavebnictví",
+    "rekonstrukce",
+    "fasáda",
+    "fasády",
+    "sociální byty",
+    "zámečnictví",
+    "zámečnické konstrukce",
+    "terasy",
+  ],
+  openGraph: {
+    title: "Široké stavební a zámečnické služby - Jiří Nesměrák | jinex.cz",
+    description: "Jsme tým zkušených lidí ve stavebnictví, kteří Vám poskytnou stavební práce od A do Z.",
+    images: [
+      {
+        height: 1200,
+        width: 630,
+        url: "/sluzby/vykopove-prace/vykopove-prace-1.avif",
+        type: "image/avif"
+      }
+    ]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 
