@@ -14,6 +14,8 @@ import Wrapper from "@/app/components/Wrapper";
 import Flex from "@/app/components/Flex";
 import Text from "@/app/components/Text";
 import Img from "@/app/components/Img";
+import HowItWorks from "@/app/sections/HowItWorks";
+import Services from "@/app/sections/Services";
 import CtaSect from "@/app/sections/CtaSect";
 import Faq from "@/app/sections/FavoriteAndQuestions";
 import Contact from "@/app/sections/Contact";
@@ -62,6 +64,8 @@ const Content = () => {
                     </Flex>
                 </Flex>
             </Wrapper>
+            <HowItWorks id="jak-to-funguje" />
+            <Services id="sluzby" />
             <CtaSect id="jste-z-karlovych-varu-nebo-okoli" />
             <Faq id="casto-kladene-dotazy" />
             <Contact id="kontakt" />
