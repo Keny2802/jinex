@@ -64,7 +64,7 @@ const Faq = ({
                             [
                                 {
                                     heading: "Jak dlouho trvá rekonstrukce bytu 3+1 kk?",
-                                    content: "Rekonstrukce bytové jednotky 3+1 kk, obvykle její realizace trvá 2-3 měsíce."
+                                    content: "Rekonstrukce bytové jednotky 3+1 kk, obvykle její realizace trvá 4-8 týdnů záleží dle objemu prací a jejich složitostí."
                                 },
                                 {
                                     heading: "Bydlím dále od KV, budu platit za dopravu?",

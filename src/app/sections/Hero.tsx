@@ -87,11 +87,14 @@ const Hero = ({
                     </Wrapper>
                     <Flex type="flexCol"
                     className="mt-2 md:mt-4 lg:mt-6 w-full md:max-w-1/2">
-                        <Logo
+                        {/* <Logo
                         width={500}
                         height={500}
-                        />
-                        <Text type="heroHeading">
+                        /> */}
+                        <Text type="heroHeading"
+                        style={{
+                            fontFamily: "var(--font-kanit)"
+                        }}>
                             Široké služby v oblasti stavebních
                             a zámečnických prací v západočeském regionu.
                         </Text>

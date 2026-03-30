@@ -6,7 +6,7 @@ import clsx from "clsx";
 
 import Wrapper from "./Wrapper";
 
-type variantType = "insetZero";
+type variantType = "insetZero" | "rightFive";
 
 type props = {
     className?: string;
@@ -22,7 +22,8 @@ const Absolute = ({
     children
 }: props) => {
     const variants = {
-        insetZero: "inset-0"
+        insetZero: "inset-0",
+        rightFive: "right-5"
     };
 
     return (

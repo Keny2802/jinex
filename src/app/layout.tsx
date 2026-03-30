@@ -95,7 +95,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fontSpaceGrotesk.variable} antialiased`}
+        className={`${fontSpaceGrotesk.variable} ${kanitFont.variable} antialiased`}
       >
         {children}
       </body>

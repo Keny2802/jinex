@@ -20,7 +20,7 @@ const WeaAreInProcess = ({
     return (
         <Fragment>
             <Wrapper
-            className={clsx("p-6 md:p-8 lg:p-10 border-t border-gray-200 bg-white shadow-lg we-are-in-process-section-component", className)}
+            className={clsx("p-6 md:p-8 lg:p-10 border-y border-gray-200 bg-white shadow-lg we-are-in-process-section-component", className)}
             id={id}>
                 <Flex
                 type="flexCol"
@@ -33,8 +33,8 @@ const WeaAreInProcess = ({
                     </Text>
                 </Flex>
                 <Grid
-                type="oneGridLayout"
-                className="mt-2.5 md:mt-3 lg:mt-4">
+                // type="oneGridLayout"
+                className="mt-2.5 md:mt-3 lg:mt-4 w-full mx-auto">
                     {
                         [
                             {
@@ -42,7 +42,19 @@ const WeaAreInProcess = ({
                                 alt: "Právě provádíme kompletní rekonstrukci bytu 4+1 v Chodově, okres Karlovy Vary - Jinex.cz | Jiří Nesměrák",
                                 href: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove",
                                 heading: "Kompletní rekonstrukce bytu 4+1 v Chodově"
-                            }
+                            },
+                            {
+                                src: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove-1.avif",
+                                alt: "Právě provádíme kompletní rekonstrukci bytu 4+1 v Chodově, okres Karlovy Vary - Jinex.cz | Jiří Nesměrák",
+                                href: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove",
+                                heading: "Kompletní rekonstrukce bytu 4+1 v Chodově"
+                            },
+                            {
+                                src: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove-1.avif",
+                                alt: "Právě provádíme kompletní rekonstrukci bytu 4+1 v Chodově, okres Karlovy Vary - Jinex.cz | Jiří Nesměrák",
+                                href: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove",
+                                heading: "Kompletní rekonstrukce bytu 4+1 v Chodově"
+                            },
                         ].map((work, idx) => {
                             const {
                                 src,
@@ -61,9 +73,11 @@ const WeaAreInProcess = ({
                                         height={500}
                                         src={src}
                                         alt={alt}
-                                        className="w-full md:max-w-[500px] md:max-h-[350px] rounded-2xl"
+                                        // className="w-full md:max-w-[500px] md:max-h-[350px] rounded-2xl"
+                                        className="w-full md:max-w-full md:h-[350px] rounded-2xl object-cover"
                                         />
-                                        <Wrapper className="absolute inset-0 w-full md:max-w-[500px] md:max-h-[350px] rounded-2xl bg-black/40" />
+                                        {/* <Wrapper className="absolute inset-0 w-full md:max-w-[500px] md:max-h-[350px] rounded-2xl bg-black/40" /> */}
+                                        <Wrapper className="absolute inset-0 w-full md:max-w-full md:h-[350px] rounded-2xl bg-black/40" />
                                         <Wrapper className="absolute bottom-8 left-5 md:max-w-[400px] text-white">
                                             <Text type="cardHeading">
                                                 {heading}

@@ -1,5 +1,13 @@
+// "use client";
+
+// import {
+//     usePathname
+// } from "next/navigation";
+
 const HashLess = (evt: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     evt.preventDefault();
+
+    // const pathName = usePathname();
 
     const currentTarget = evt.currentTarget;
     const targetElement = currentTarget.getAttribute("href")?.substring(1);

@@ -7,7 +7,7 @@ import {
     usePathname,
 } from "next/navigation";
 
-import servicePagesSet from "@/app/sets/servicePagesSet";
+import nowWeWorkPageSet from "@/app/components/nowWeWorkPageSet";
 import Header from "@/app/components/Header";
 import Subheader from "@/app/components/Subheader";
 import Wrapper from "@/app/components/Wrapper";
@@ -18,7 +18,6 @@ import CtaSect from "@/app/sections/CtaSect";
 import Faq from "@/app/sections/FavoriteAndQuestions";
 import Contact from "@/app/sections/Contact";
 import Footer from "@/app/components/Footer";
-import nowWeWorkPageSet from "@/app/components/nowWeWorkPageSet";
 
 const Content = () => {
     const pathName = usePathname();

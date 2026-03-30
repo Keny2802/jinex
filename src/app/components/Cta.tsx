@@ -6,7 +6,9 @@ import {
 } from "react";
 import Link from "next/link";
 import clsx from "clsx";
+
 import HashLess from "./HashLess";
+import Text from "./Text";
 
 type variantType = "primary" | "secondary";
 type sizeType = "md" | "lg";
@@ -42,7 +44,9 @@ const Cta = ({
             href={href}
             onClick={(e) => HashLess(e, href)}
             className={clsx(className, `${variants[variant]} ${sizes[size]} cta-component`)}>
-                {children}
+                <Text>
+                    {children}
+                </Text>
             </Link>
         </Fragment>
     );

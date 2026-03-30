@@ -46,7 +46,7 @@ const Logo = ({
                         })
                     )
                 }
-                src="/logo.avif"
+                src="/nove-logo-jinex-bez-pozadi.avif"
                 alt="Jinex.cz | Jiří Nesměrák logo"
                 type={type}
                 className={clsx(className, "logo-component")}

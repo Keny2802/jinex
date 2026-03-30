@@ -5,6 +5,6 @@ html {
 }
 
 @theme inline {
-  /* --font-kanit: var(--font-kanit); */
+  --font-kanit: var(--font-kanit);
   --font-space-grotesk: var(--font-space-grotesk);
 }

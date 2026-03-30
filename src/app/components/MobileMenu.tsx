@@ -12,6 +12,7 @@ import Logo from "./Logo";
 import Flex from "./Flex";
 import Cta from "./Cta";
 import HashLess from "./HashLess";
+import Text from "./Text";
 
 type props = {
     className?: string;
@@ -67,7 +68,9 @@ const MobileMenu = ({
                                                     <Link
                                                     href={link.href}
                                                     onClick={(evt) => HashLess(evt, link.href)}>
-                                                        {link.text}
+                                                        <Text>
+                                                            {link.text}
+                                                        </Text>
                                                     </Link>
                                                 </li>
                                             </Fragment>
