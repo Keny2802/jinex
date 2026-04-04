@@ -38,11 +38,41 @@ const WeaAreInProcess = ({
                     {
                         [
                             {
-                                src: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove-1.avif",
+                                src: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove-5.avif",
                                 alt: "Právě provádíme kompletní rekonstrukci bytu 4+1 v Chodově, okres Karlovy Vary - Jinex.cz | Jiří Nesměrák",
                                 href: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove",
                                 heading: "Kompletní rekonstrukce bytu 4+1 v Chodově"
-                            }
+                            },
+                            {
+                                src: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove-6.avif",
+                                alt: "Právě provádíme kompletní rekonstrukci bytu 4+1 v Chodově, okres Karlovy Vary - Jinex.cz | Jiří Nesměrák",
+                                href: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove",
+                                heading: "Kompletní rekonstrukce bytu 4+1 v Chodově"
+                            },
+                            {
+                                src: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove-7.avif",
+                                alt: "Právě provádíme kompletní rekonstrukci bytu 4+1 v Chodově, okres Karlovy Vary - Jinex.cz | Jiří Nesměrák",
+                                href: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove",
+                                heading: "Kompletní rekonstrukce bytu 4+1 v Chodově"
+                            },
+                            {
+                                src: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove-8.avif",
+                                alt: "Právě provádíme kompletní rekonstrukci bytu 4+1 v Chodově, okres Karlovy Vary - Jinex.cz | Jiří Nesměrák",
+                                href: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove",
+                                heading: "Kompletní rekonstrukce bytu 4+1 v Chodově"
+                            },
+                            {
+                                src: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove-9.avif",
+                                alt: "Právě provádíme kompletní rekonstrukci bytu 4+1 v Chodově, okres Karlovy Vary - Jinex.cz | Jiří Nesměrák",
+                                href: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove",
+                                heading: "Kompletní rekonstrukce bytu 4+1 v Chodově"
+                            },
+                            {
+                                src: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove-10.avif",
+                                alt: "Právě provádíme kompletní rekonstrukci bytu 4+1 v Chodově, okres Karlovy Vary - Jinex.cz | Jiří Nesměrák",
+                                href: "/prave-provadime/kompletni-rekonstrukce-bytu-4-1-v-chodove",
+                                heading: "Kompletní rekonstrukce bytu 4+1 v Chodově"
+                            },
                         ].map((work, idx) => {
                             const {
                                 src,
