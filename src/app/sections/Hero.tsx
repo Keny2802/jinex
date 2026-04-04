@@ -68,11 +68,11 @@ const Hero = ({
                                     <Img
                                     key={idx}
                                     width={350}
-                                    height={350}
+                                    height={210}
                                     src={picture.src}
                                     alt={picture.alt}
                                     type="instantImage"
-                                    className={`${idx === 2 ? "md:col-span-2 md:max-w-full" : "col-span-1"} row-span-1 w-full md:max-w-[350px] md:min-h-[300px] md:max-h-[350px] object-cover rounded-md`}
+                                    className={`${idx === 2 ? "md:col-span-2 md:max-w-full" : "col-span-1"} row-span-1 w-full md:max-w-[350px] md:min-h-[200px] md:h-[205px] md:max-h-[210px] object-cover rounded-md`}
                                     />
                                 );
                             })

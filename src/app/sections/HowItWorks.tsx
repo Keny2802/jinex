@@ -88,7 +88,7 @@ const HowItWorks = ({
                                     text: "Po Vámi schválení cenové nabídky, navrhneme termín realizace."
                                 },
                                 {
-                                    heading: "Jdeme makat!",
+                                    heading: "Můžeme začít",
                                     text: "Po dohodnutí termínu realizace, přijedeme a pouštíme se do realizace projektu."
                                 }
                             ].map((card, idx) => {
