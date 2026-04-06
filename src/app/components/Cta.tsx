@@ -6,9 +6,7 @@ import {
 } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-
-import HashLess from "./HashLess";
-import Text from "./Text";
+import Hashless from "@/functions/Hashless";
 
 type variantType = "primary" | "secondary";
 type sizeType = "md" | "lg";
@@ -29,8 +27,8 @@ const Cta = ({
     children
 }: props) => {
     const variants = {
-        primary: "bg-[#0530a6] text-white text-center rounded-full cursor-pointer text-base md:text-[17px] lg:text-[17.5px]",
-        secondary: "bg-white text-black text-center rounded-full cursor-pointer text-base md:text-[17px] lg:text-[17.5px]"
+        primary: "bg-[#0D1194] text-white text-center rounded-md cursor-pointer text-base md:text-[17px] lg:text-[17.5px]",
+        secondary: "bg-white text-black text-center rounded-md cursor-pointer text-base md:text-[17px] lg:text-[17.5px]"
     };
 
     const sizes = {
@@ -41,12 +39,18 @@ const Cta = ({
     return (
         <Fragment>
             <Link
-            href={href}
-            onClick={(e) => HashLess(e, href)}
-            className={clsx(className, `${variants[variant]} ${sizes[size]} cta-component`)}>
-                <Text>
-                    {children}
-                </Text>
+            className={clsx(className, `${variants[variant]} ${sizes[size]} cta-component`)}
+            {
+                ...(
+                    href.startsWith("#") ? ({
+                        href: href,
+                        onClick: (e) => Hashless(e, href)
+                    }) : ({
+                        href: href
+                    })
+                )
+            }>
+                {children}
             </Link>
         </Fragment>
     );
