@@ -8,6 +8,7 @@ import Wrapper from "../components/Wrapper";
 import Flex from "../components/Flex";
 import Text from "../components/Text";
 import Grid from "../components/Grid";
+import UpAnimation from "../animations/motion/UpAnimation";
 import Img from "../components/Img";
 
 const LastDoneWorks = ({
@@ -67,22 +68,24 @@ const LastDoneWorks = ({
                                 <Link
                                 key={idx}
                                 href={href}>
-                                    <Wrapper
-                                    className="relative">
-                                        <Img
-                                        width={500}
-                                        height={500}
-                                        src={src}
-                                        alt={alt}
-                                        className="w-full max-h-[375px] md:max-w-[500px] md:h-[350px] rounded-2xl object-cover"
-                                        />
-                                        <Wrapper className="absolute inset-0 w-full md:max-w-[500px] md:h-[350px] rounded-2xl bg-black/40" />
-                                        <Wrapper className="absolute bottom-8 left-5 md:max-w-[400px] text-white">
-                                            <Text type="cardHeading">
-                                                {heading}
-                                            </Text>
+                                    <UpAnimation>
+                                        <Wrapper
+                                        className="relative">
+                                            <Img
+                                            width={500}
+                                            height={500}
+                                            src={src}
+                                            alt={alt}
+                                            className="w-full max-h-[375px] md:max-w-[500px] md:h-[350px] rounded-2xl object-cover"
+                                            />
+                                            <Wrapper className="absolute inset-0 w-full md:max-w-[500px] md:h-[350px] rounded-2xl bg-black/40" />
+                                            <Wrapper className="absolute bottom-8 left-5 md:max-w-[400px] text-white">
+                                                <Text type="cardHeading">
+                                                    {heading}
+                                                </Text>
+                                            </Wrapper>
                                         </Wrapper>
-                                    </Wrapper>
+                                    </UpAnimation>
                                 </Link>
                             );
                         }))

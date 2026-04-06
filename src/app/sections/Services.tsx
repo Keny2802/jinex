@@ -8,6 +8,7 @@ import Wrapper from "../components/Wrapper";
 import Flex from "../components/Flex";
 import Text from "../components/Text";
 import Grid from "../components/Grid";
+import UpAnimation from "../animations/motion/UpAnimation";
 import Img from "../components/Img";
 
 const Services = ({
@@ -96,34 +97,36 @@ const Services = ({
                                 <Link
                                 key={idx}
                                 href={href}>
-                                    <Wrapper
-                                    className="relative bg-[#0530a6] rounded-2xl">
-                                        <Img
-                                        width={500}
-                                        height={500}
-                                        src={src}
-                                        alt={alt}
-                                        // rounded-2xl
-                                        className="w-full md:max-w-full md:h-[350px] rounded-2xl object-cover"
-                                        // style={{
-                                        //     // 17% 0, 100% 0, 89% 100%, 0 100%
-                                        //     clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 51%)"
-                                        // }}
-                                        />
-                                        {/* [500px] */}
+                                    <UpAnimation>
                                         <Wrapper
-                                        className="absolute inset-0 bg-black/40 rounded-2xl"
-                                        // style={{
-                                        //     clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 51%)"
-                                        // }}
-                                        />
-                                        {/* <Wrapper className="absolute inset-0 w-full md:max-w-full md:h-[350px] rounded-2xl bg-black/30" /> */}
-                                        <Wrapper className="absolute bottom-8 left-5 md:max-w-[400px] text-white">
-                                            <Text type="cardHeading">
-                                                {heading}
-                                            </Text>
+                                        className="relative bg-[#0530a6] rounded-2xl">
+                                            <Img
+                                            width={500}
+                                            height={500}
+                                            src={src}
+                                            alt={alt}
+                                            // rounded-2xl
+                                            className="w-full md:max-w-full md:h-[350px] rounded-2xl object-cover"
+                                            // style={{
+                                            //     // 17% 0, 100% 0, 89% 100%, 0 100%
+                                            //     clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 51%)"
+                                            // }}
+                                            />
+                                            {/* [500px] */}
+                                            <Wrapper
+                                            className="absolute inset-0 bg-black/40 rounded-2xl"
+                                            // style={{
+                                            //     clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 51%)"
+                                            // }}
+                                            />
+                                            {/* <Wrapper className="absolute inset-0 w-full md:max-w-full md:h-[350px] rounded-2xl bg-black/30" /> */}
+                                            <Wrapper className="absolute bottom-8 left-5 md:max-w-[400px] text-white">
+                                                <Text type="cardHeading">
+                                                    {heading}
+                                                </Text>
+                                            </Wrapper>
                                         </Wrapper>
-                                    </Wrapper>
+                                    </UpAnimation>
                                 </Link>
                             );
                         }))
