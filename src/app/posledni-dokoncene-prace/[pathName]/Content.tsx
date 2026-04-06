@@ -11,6 +11,7 @@ import lastDoneWorkPagesSet from "@/app/sets/lastDoneWorkPagesSet";
 import Header from "@/app/components/Header";
 import Subheader from "@/app/components/Subheader";
 import Wrapper from "@/app/components/Wrapper";
+import Pathlink from "@/app/components/Pathlink";
 import Flex from "@/app/components/Flex";
 import Text from "@/app/components/Text";
 import Img from "@/app/components/Img";
@@ -33,6 +34,11 @@ const Content = () => {
             <Header />
             <Subheader />
             <Wrapper className="p-6 md:p-8 lg:p-10 border-y border-gray-200 bg-white shadow-lg">
+                <Pathlink
+                parentFolderPath="posledni-dokoncene-prace"
+                parentFolderName="Poslední dokončené práce"
+                pageList={lastDoneWorkPagesSet}
+                />
                 <Flex
                 type="flexCol"
                 className="justify-center items-center text-center">
