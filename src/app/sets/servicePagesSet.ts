@@ -95,7 +95,10 @@ const servicePagesSet = [
             // "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce-16.avif",
             // "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce-17.avif",
             "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce-18.avif",
-            "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce-19.avif"
+            "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce-19.avif",
+            "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce-20.avif",
+            "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce-21.avif",
+            "/sluzby/stavebni-a-zamecnicke-konstrukce/stavebni-a-zamecnicke-konstrukce-22.avif",
         ],
         alt: "Služba stavební a zamečnické konstrukce - Jinex.cz | Jiří Nesměrák"
     },
