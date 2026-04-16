@@ -11,6 +11,7 @@ import Flex from "./Flex";
 import Logo from "./Logo";
 import Text from "./Text";
 import HashLess from "./HashLess";
+import TopList from "./TopList";
 
 type props = {
     className?: string;
@@ -106,6 +107,7 @@ const Footer = ({
                     </Text>
                 </Flex>
             </Wrapper>
+            <TopList />
         </Fragment>
     );
 };
